@@ -12,7 +12,7 @@ sudo apt install ocaml ocaml-libs ninja-build cmake doxygen sphinx-doc sphinx-co
 git clone -b llvm-4.0 https://github.com/alandplm/obfuscator.git
 mkdir build
 cd build
-cmake -G "Unix Makefiles" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_BUILD_TYPE=Release -DLLVM_INCLUDE_TESTS=OFF ../obfuscator
+cmake -G "Unix Makefiles" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=host -DLLVM_INCLUDE_TESTS=OFF ../obfuscator
 make -j7
 ```
 

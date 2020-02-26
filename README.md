@@ -1,7 +1,18 @@
 # Fork README
 
-Current version: [LLVM-4.0](https://github.com/alandplm/obfuscator/tree/llvm-4.0)
+Current Fork version: [LLVM-4.0](https://github.com/alandplm/obfuscator/tree/llvm-4.0)
 
+## Instalation
+
+### Ubuntu 19.10
+
+sudo apt install ocaml ocaml-libs ninja-build cmake doxygen sphinx-doc sphinx-common git libevent-dev libncurses-dev pkg-config gcc-7 g++-7
+
+git clone -b llvm-4.0 https://github.com/alandplm/obfuscator.git
+mkdir build
+cd build
+cmake -G "Unix Makefiles" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_BUILD_TYPE=Release -DLLVM_INCLUDE_TESTS=OFF ../obfuscator
+make -j7
 
 
 # Upstream README

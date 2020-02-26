@@ -1,10 +1,10 @@
-# This fork README
+# Fork README
 
 Current version: [LLVM-4.0](https://github.com/alandplm/obfuscator/tree/llvm-4.0)
 
 
 
-# Original README
+# Upstream README
 Please have a look at the [wiki](https://github.com/obfuscator-llvm/obfuscator/wiki)!
 
 Current version: [LLVM-4.0](https://github.com/obfuscator-llvm/obfuscator/tree/llvm-4.0)
